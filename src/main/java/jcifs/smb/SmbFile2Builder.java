@@ -9,11 +9,8 @@ import org.apache.commons.lang3.reflect.ConstructorUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import jcifs.SmbTransportPool;
 import jcifs.context.BaseContext;
 import jcifs.io.CopyStreamProcessListener;
-import jcifs.netbios.UniAddress;
-import jcifs.smb1.smb1.NtlmPasswordAuthentication;
 import jcifs.utils.SMBPathUtils;
 
 /**
@@ -24,6 +21,7 @@ public class SmbFile2Builder implements Builder<SmbFile2> {
 	
 	protected static Logger LOG = LoggerFactory.getLogger(SmbFile2Builder.class);
 	private BaseContext context;
+	private SmbFile2Config clientConfig = new SmbFile2Config();
 	 
 	@SuppressWarnings("unchecked")
 	public SmbFile2 build() {
@@ -33,25 +31,10 @@ public class SmbFile2Builder implements Builder<SmbFile2> {
 		
 		try {
 			
-			if(StringUtils.isNotEmpty(clientConfig.getDomain())){
-				//DOMAIN_IP         域名服务（其实域名和域名服务器IP可以，不过用IP解析速度快很多。）  
-				//DOMAIN_NAME       域名  
-				//LOGIN_NAME        用户名  
-				//PASSWORD      密码  
-				UniAddress address = new UniAddress(clientConfig.getHost());  
-				NtlmPasswordAuthentication authentication = new NtlmPasswordAuthentication(clientConfig.getDomain(), clientConfig.getUsername(), clientConfig.getPassword());  
-				
-				SmbTransportPool SmbTransportPool = new SmbTransportPoolImpl();
-				//SmbTransportPool.logon(dc, address);  
-				
-				//创建基于smb协议的共享文件访问对象
-				smbClient = new SmbFile2( SMBPathUtils.getSharedURL(clientConfig.getHost(), clientConfig.getSharedDir()) , authentication);
-			}else{
-				//共享目录访问路径
-				String sharedURL = SMBPathUtils.getSharedURL(clientConfig.getUsername(), clientConfig.getPassword(), clientConfig.getHost(), clientConfig.getSharedDir());
-				//创建基于smb协议的共享文件访问对象
-				smbClient = new SmbFile2(sharedURL);
-			}
+			//共享目录访问路径（用户名密码内嵌在URL中）
+			String sharedURL = SMBPathUtils.getSharedURL(clientConfig.getUsername(), clientConfig.getPassword(), clientConfig.getHost(), clientConfig.getSharedDir());
+			//创建基于smb协议的共享文件访问对象
+			smbClient = new SmbFile2(sharedURL);
 			//启用或禁用用户交互（例如弹出一个验证对话框）的上下文中对此 URL 进行检查
 			smbClient.setAllowUserInteraction(clientConfig.isAllowUserInteraction());
 			//设置一个指定的超时值（以毫秒为单位），该值将在打开到此 URLConnection 引用的资源的通信链接时使用
