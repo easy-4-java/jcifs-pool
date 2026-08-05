@@ -14,7 +14,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.ByteArrayOutputStream;
 
-import jcifs.smb1.filter.Smb1FileFilter;
+import jcifs.smb.filter.Smb2FileFilter;
 import jcifs.utils.Smb2FileUtils;
  
 /**
@@ -255,7 +255,7 @@ public class SmbFile2ResourceClient implements ISMBClient{
 	}
 	
 	@Override
-	public SmbFile2[] listFiles(String sharedDir, Smb1FileFilter filter) throws Exception{
+	public SmbFile2[] listFiles(String sharedDir, Smb2FileFilter filter) throws Exception{
 		//获得一个SMBClient对象
 		SmbFile2 smbClient = getSMBClient();
 		try { 
@@ -269,7 +269,7 @@ public class SmbFile2ResourceClient implements ISMBClient{
 	}
 		
 	@Override
-	public SmbFile2[] listFiles(String sharedDir, Smb1FileFilter filter,boolean recursion) throws Exception{
+	public SmbFile2[] listFiles(String sharedDir, Smb2FileFilter filter,boolean recursion) throws Exception{
 		//获得一个SMBClient对象
 		SmbFile2 smbClient = getSMBClient();
 		try { 

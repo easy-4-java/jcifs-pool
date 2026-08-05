@@ -7,6 +7,7 @@ import java.io.OutputStream;
 import javax.servlet.ServletResponse;
 
 import jcifs.smb1.SmbFile1;
+import jcifs.smb.filter.Smb2FileFilter;
 
 /**
  * SMBClient 客户端接口
@@ -60,9 +61,9 @@ public interface ISMBClient {
 	
 	public SmbFile[] listFiles(String sharedDir, String[] extensions,boolean recursion) throws Exception;
 	
-	public SmbFile[] listFiles(String sharedDir, SmbFileFilter filter) throws Exception;
+	public SmbFile[] listFiles(String sharedDir, Smb2FileFilter filter) throws Exception;
 		
-	public SmbFile[] listFiles(String sharedDir, SmbFileFilter filter,boolean recursion) throws Exception;
+	public SmbFile[] listFiles(String sharedDir, Smb2FileFilter filter,boolean recursion) throws Exception;
 	
 	public SmbFile getFile(String ftpFilePath) throws Exception;
 	

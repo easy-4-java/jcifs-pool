@@ -23,7 +23,7 @@ public class SmbFile2PooledResourceClient extends SmbFile2ResourceClient{
 	@Override
 	public SmbFile2 getSMBClient() throws Exception {
 		//从对象池获取SMBClient对象
-		return clientPool.borrowObject();
+		return new SmbFile2(clientPool.borrowObject().getURL().toString());
 	}
  
 	@Override

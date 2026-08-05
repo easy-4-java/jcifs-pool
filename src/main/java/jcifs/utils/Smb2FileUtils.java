@@ -256,6 +256,36 @@ protected static Logger LOG = LoggerFactory.getLogger(Smb2FileUtils.class);
 		return fileList;
 	}
 	
+	public static List<SmbFile2> listFiles(SmbFile2 sharedDir, String[] extensions, boolean recursion) throws IOException {
+		return listFiles(sharedDir, sharedDir.getPath(), extensions, recursion);
+	}
+
+	public static List<SmbFile2> listFiles(SmbFile2 sharedDir, Smb2FileFilter filter, boolean recursion) throws IOException {
+		return listFiles(sharedDir, sharedDir.getPath(), filter, recursion);
+	}
+
+	public static List<SmbFile> listFiles(SmbFile[] files, String[] extensions) throws IOException {
+		List<SmbFile> fileList = new ArrayList<SmbFile>();
+		if(files != null && files.length > 0){
+			for(SmbFile sharedFile : files){
+				fileList.add(sharedFile);
+			}
+		}
+		return fileList;
+	}
+
+	public static List<SmbFile> listFiles(SmbFile[] files, Smb2FileFilter filter) throws IOException {
+		List<SmbFile> fileList = new ArrayList<SmbFile>();
+		if(files != null && files.length > 0){
+			for(SmbFile sharedFile : files){
+				if(filter.accept(sharedFile)){
+					fileList.add(sharedFile);
+				}
+			}
+		}
+		return fileList;
+	}
+
 	public static List<SmbFile2> listFiles(SmbFile2 smbClient, String sharedDir, String[] extensions, boolean recursion) throws IOException {
 		//当前目录
 		SmbFile2 currentDir = new SmbFile2(smbClient,SMBPathUtils.getSharedDir(sharedDir));
@@ -270,7 +300,7 @@ protected static Logger LOG = LoggerFactory.getLogger(Smb2FileUtils.class);
 			for(SmbFile sharedFile : files){
 				if (sharedFile.isDirectory() ) {
 					if(recursion){
-						fileList.addAll( smbClient.wrapAll(Smb2FileUtils.listFiles( sharedFile, extensions, recursion)) );
+						fileList.addAll( smbClient.wrapAll(Smb2FileUtils.listFiles(new SmbFile2(sharedFile.getURL().toString()), extensions, recursion)) );
 					}else{
 						fileList.add( smbClient.wrap(sharedFile));
 					}
@@ -296,7 +326,7 @@ protected static Logger LOG = LoggerFactory.getLogger(Smb2FileUtils.class);
 			for(SmbFile sharedFile : files){
 				if (sharedFile.isDirectory() ) {
 					if(recursion){
-						fileList.addAll( smbClient.wrapAll(Smb2FileUtils.listFiles( sharedFile, filter, recursion)) );
+						fileList.addAll( smbClient.wrapAll(Smb2FileUtils.listFiles(new SmbFile2(sharedFile.getURL().toString()), filter, recursion)) );
 					}else{
 						fileList.add( smbClient.wrap(sharedFile));
 					}
