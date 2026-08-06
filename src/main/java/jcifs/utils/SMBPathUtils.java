@@ -10,7 +10,7 @@ import org.apache.commons.lang3.StringUtils;
 
 /**
  * 共享文件路径工具
- * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class SMBPathUtils {
 

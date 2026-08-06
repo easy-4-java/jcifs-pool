@@ -11,7 +11,7 @@ import jcifs.smb.filter.Smb2FileFilter;
 
 /**
  * SMBClient 客户端接口
- * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public interface ISMBClient {
 	

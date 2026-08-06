@@ -5,7 +5,7 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import jcifs.smb1.SmbFile1;
 /**
  * 基于apache-pool2的对象池初始化对象
- * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class SmbFilePoolConfig extends GenericObjectPoolConfig<SmbFile1> {
 	
