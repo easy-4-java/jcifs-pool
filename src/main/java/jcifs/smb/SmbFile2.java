@@ -44,7 +44,7 @@ public class SmbFile2 extends SmbFile {
 	protected long restartOffset = 0;
 
 	public SmbFile2(String url) throws MalformedURLException {
-		super(url, CIFSContext tc );
+		super(url);
 	}
 	 
 	
@@ -54,18 +54,18 @@ public class SmbFile2 extends SmbFile {
 		copy(context,this);
 	}
 	 
-	public SmbFile2 wrap(SmbFile smbFile) {
-		SmbFile2 newClient = new SmbFile2(smbFile.getURL());
+	public SmbFile2 wrap(SmbFile smbFile) throws MalformedURLException {
+		SmbFile2 newClient = new SmbFile2(smbFile.getURL().toString());
 		//拷贝初始参数
 		copy(this,newClient);
 		return newClient;
 	}
 	
-	public Collection<SmbFile2> wrapAll(Collection<SmbFile> smbFiles) {
+	public Collection<SmbFile2> wrapAll(Collection<? extends SmbFile> smbFiles) throws MalformedURLException {
 		//创建文件类型的文件集合
 		Collection<SmbFile2> fileList = new ArrayList<SmbFile2>();
 		for (SmbFile smbFile : smbFiles) {
-			SmbFile2 newClient = new SmbFile2(smbFile.getURL());
+			SmbFile2 newClient = new SmbFile2(smbFile.getURL().toString());
 			//拷贝初始参数
 			copy(this,newClient);
 			fileList.add(newClient);
