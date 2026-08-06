@@ -4,7 +4,7 @@ import jcifs.smb.pool.SmbFilePool;
 
 /**
  * 基于 Apache Pool2的SMBClient共享文件资源服务客户端实现
- * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class SmbFile2PooledResourceClient extends SmbFile2ResourceClient{
 	
