@@ -15,7 +15,7 @@ import jcifs.utils.SMBPathUtils;
 
 /**
  *  SmbFile对象构建器
- * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public class SmbFile2Builder implements Builder<SmbFile2> {
 	
