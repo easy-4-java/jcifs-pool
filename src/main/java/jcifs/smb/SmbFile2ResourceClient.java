@@ -13,6 +13,7 @@ import javax.servlet.ServletResponse;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.ByteArrayOutputStream;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 import jcifs.smb.filter.Smb2FileFilter;
 import jcifs.utils.Smb2FileUtils;

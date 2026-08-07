@@ -15,8 +15,8 @@
  */
 package jcifs.smb.filter;
 
-import jcifs.smb.SmbFileFilter;
-import jcifs.smb.SmbFilenameFilter;
+import org.codelibs.jcifs.smb.impl.SmbFileFilter;
+import org.codelibs.jcifs.smb.impl.SmbFilenameFilter;
 
 public interface Smb2FileFilter extends SmbFileFilter, SmbFilenameFilter {
 

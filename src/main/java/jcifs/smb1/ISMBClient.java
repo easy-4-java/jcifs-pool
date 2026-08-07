@@ -7,7 +7,7 @@ import java.io.OutputStream;
 import javax.servlet.ServletResponse;
 
 import jcifs.smb1.filter.Smb1FileFilter;
-import jcifs.smb1.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFile;
 
 /**
  * SMBClient 客户端接口

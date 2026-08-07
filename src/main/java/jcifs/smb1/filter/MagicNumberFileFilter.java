@@ -31,8 +31,8 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.SystemUtils;
 
-import jcifs.smb1.smb1.SmbException;
-import jcifs.smb1.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbException;
+import org.codelibs.jcifs.smb1.SmbFile;
 
 @SuppressWarnings("serial")
 public class MagicNumberFileFilter extends AbstractFileFilter  implements Serializable {

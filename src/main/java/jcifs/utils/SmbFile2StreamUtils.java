@@ -18,7 +18,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import jcifs.io.CopyStreamProcessListener;
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 import jcifs.smb.SmbFile2;
 
 public class SmbFile2StreamUtils {

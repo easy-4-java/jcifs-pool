@@ -17,8 +17,8 @@ package jcifs.smb.filter;
 
 import java.io.Serializable;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbException;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 @SuppressWarnings("serial")
 public class TrueFileFilter implements Smb2FileFilter, Serializable {

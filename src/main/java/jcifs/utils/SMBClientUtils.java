@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 
 import jcifs.smb1.SmbFile1;
 import jcifs.smb1.filter.Smb1FileFilter;
-import jcifs.smb1.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFile;
 
 public class SMBClientUtils {
 

@@ -20,9 +20,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
-import jcifs.smb.SmbFileFilter;
+import org.codelibs.jcifs.smb.impl.SmbException;
+import org.codelibs.jcifs.smb.impl.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbFileFilter;
 import jcifs.smb.filter.FalseFileFilter;
 import jcifs.smb.filter.FileFileFilter;
 import jcifs.smb.filter.Smb2FileFilter;

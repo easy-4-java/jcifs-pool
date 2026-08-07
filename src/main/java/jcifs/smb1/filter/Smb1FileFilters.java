@@ -28,9 +28,9 @@ import java.util.Set;
 import org.apache.commons.io.IOCase;
 import org.apache.commons.io.filefilter.DirectoryFileFilter;
 
-import jcifs.smb1.smb1.SmbException;
-import jcifs.smb1.smb1.SmbFile;
-import jcifs.smb1.smb1.SmbFileFilter;
+import org.codelibs.jcifs.smb1.SmbException;
+import org.codelibs.jcifs.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFileFilter;
 
 public class Smb1FileFilters {
 

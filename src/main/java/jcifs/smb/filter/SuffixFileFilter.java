@@ -20,8 +20,8 @@ import java.util.List;
 
 import org.apache.commons.io.IOCase;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbException;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 @SuppressWarnings("serial")
 public class SuffixFileFilter extends AbstractFileFilter implements Serializable {

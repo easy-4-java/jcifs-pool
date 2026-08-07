@@ -19,7 +19,7 @@ import java.io.File;
 import java.io.Serializable;
 import java.util.Date;
 
-import jcifs.smb1.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFile;
 import jcifs.utils.Smb1FileUtils;
 
 @SuppressWarnings("serial")

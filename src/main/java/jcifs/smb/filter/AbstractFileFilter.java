@@ -15,8 +15,8 @@
  */
 package jcifs.smb.filter;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbException;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 public abstract class AbstractFileFilter implements Smb2FileFilter {
 

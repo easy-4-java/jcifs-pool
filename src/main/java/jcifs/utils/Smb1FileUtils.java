@@ -29,9 +29,9 @@ import jcifs.smb1.filter.Smb1FileFilter;
 import jcifs.smb1.filter.Smb1FileFilters;
 import jcifs.smb1.filter.SuffixFileFilter;
 import jcifs.smb1.filter.TrueFileFilter;
-import jcifs.smb1.smb1.SmbException;
-import jcifs.smb1.smb1.SmbFile;
-import jcifs.smb1.smb1.SmbFileFilter;
+import org.codelibs.jcifs.smb1.SmbException;
+import org.codelibs.jcifs.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFileFilter;
 
 public class Smb1FileUtils {
 

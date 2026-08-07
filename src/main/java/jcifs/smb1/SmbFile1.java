@@ -16,9 +16,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import jcifs.io.CopyStreamProcessListener;
-import jcifs.smb1.smb1.NtlmPasswordAuthentication;
-import jcifs.smb1.smb1.SmbFile;
-import jcifs.smb1.smb1.SmbFileInputStream;
+import org.codelibs.jcifs.smb1.NtlmPasswordAuthentication;
+import org.codelibs.jcifs.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFileInputStream;
 
 public class SmbFile1 extends SmbFile {
 	

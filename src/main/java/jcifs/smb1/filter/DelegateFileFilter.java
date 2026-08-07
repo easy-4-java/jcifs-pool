@@ -17,9 +17,9 @@ package jcifs.smb1.filter;
 
 import java.io.Serializable;
 
-import jcifs.smb1.smb1.SmbException;
-import jcifs.smb1.smb1.SmbFile;
-import jcifs.smb1.smb1.SmbFileFilter;
+import org.codelibs.jcifs.smb1.SmbException;
+import org.codelibs.jcifs.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFileFilter;
 
 
 @SuppressWarnings("serial")
