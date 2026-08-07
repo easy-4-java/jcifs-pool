@@ -4,6 +4,8 @@
 
 [![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/jcifs-pool) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
+jcifs-pool provides a connection-pooled SMB/CIFS file-access toolkit on top of the org.codelibs jcifs 2.1.11 client (an SMB2-capable fork of JCIFS)
+
 > **Status**: maintained on the `feature/1.0.x` line (JDK 8). Artifacts are not yet published to Maven Central; they are distributed through the project's private repository and GitHub Releases.
 
 ## Table of Contents
