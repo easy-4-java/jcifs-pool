@@ -4,7 +4,9 @@
 
 [![Java](https://img.shields.io/badge/Java-17-orange)](https://github.com/easy-4-java/jcifs-pool) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
-> **项目状态**：`feature/2.0.x` 版本线维护中（JDK 17）。制品尚未发布到 Maven Central，通过项目私服与 GitHub Releases 分发。
+jcifs-pool 基于 org.codelibs jcifs 2.1.11（支持 SMB2 的 JCIFS 分支）提供连接池化的 SMB/CIFS 文件访问工具集。
+
+> **项目状态**：`feature/2.0.x` 版本线维护中（JDK 8）。制品尚未发布到 Maven Central，通过项目私服与 GitHub Releases 分发。
 
 ## 目录
 
