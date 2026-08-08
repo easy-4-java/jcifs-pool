@@ -18,10 +18,19 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 import jcifs.smb.SmbFile2;
 import jcifs.smb.filter.Smb2FileFilter;
 
+/**
+ * Comprehensive utility class for SMB2 file operations including upload, download,
+ * directory management, file listing, and NIO channel-based transfers.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see SmbFile2ResourceClient
+ * @see Smb2ChannelUtils
+ */
 public class Smb2FileUtils {
 
 protected static Logger LOG = LoggerFactory.getLogger(Smb2FileUtils.class);

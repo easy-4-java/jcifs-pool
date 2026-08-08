@@ -19,8 +19,18 @@ import org.slf4j.LoggerFactory;
 
 import jcifs.io.CopyStreamProcessListener;
 import jcifs.smb1.SmbFile1;
-import jcifs.smb1.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFile;
 
+/**
+ * Utility class for stream-based SMB1 file transfers. Provides buffered stream
+ * wrapping, large file copy operations with progress monitoring, and skip/resume
+ * support for interrupted transfers.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see SmbFile1StreamUtils
+ * @see SmbFile2StreamUtils
+ */
 public class SmbFileStreamUtils {
 	
 	/**

@@ -15,9 +15,18 @@
  */
 package jcifs.smb.filter;
 
-import jcifs.smb.SmbFileFilter;
-import jcifs.smb.SmbFilenameFilter;
+import org.codelibs.jcifs.smb.impl.SmbFileFilter;
+import org.codelibs.jcifs.smb.impl.SmbFilenameFilter;
 
+/**
+ * Unified file filter interface for SMB2 protocol that combines both {@link SmbFileFilter}
+ * and {@link SmbFilenameFilter} capabilities.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AbstractFileFilter
+ * @see Smb2FileFilters
+ */
 public interface Smb2FileFilter extends SmbFileFilter, SmbFilenameFilter {
 
 }
