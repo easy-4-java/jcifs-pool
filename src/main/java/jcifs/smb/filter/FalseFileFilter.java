@@ -17,11 +17,19 @@ package jcifs.smb.filter;
 
 import java.io.Serializable;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbException;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 
 @SuppressWarnings("serial")
+/**
+ * A file filter that always returns {@code false}, rejecting all files.
+ * This is a singleton filter accessible via {@link #FALSE} or {@link #INSTANCE}.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see TrueFileFilter
+ */
 public class FalseFileFilter implements Smb2FileFilter , Serializable {
    
 	public static final Smb2FileFilter FALSE = new FalseFileFilter();

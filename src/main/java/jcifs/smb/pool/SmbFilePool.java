@@ -2,7 +2,7 @@ package jcifs.smb.pool;
 
 import org.apache.commons.pool2.impl.GenericObjectPool;
 
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 /**
  * SMBClient连接池

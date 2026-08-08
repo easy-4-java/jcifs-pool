@@ -28,10 +28,19 @@ import java.util.Set;
 import org.apache.commons.io.IOCase;
 import org.apache.commons.io.filefilter.DirectoryFileFilter;
 
-import jcifs.smb1.smb1.SmbException;
-import jcifs.smb1.smb1.SmbFile;
-import jcifs.smb1.smb1.SmbFileFilter;
+import org.codelibs.jcifs.smb1.SmbException;
+import org.codelibs.jcifs.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFileFilter;
 
+/**
+ * Factory and utility methods for creating and combining {@link Smb1FileFilter} instances.
+ * Provides static factory methods for common filter patterns such as prefix, suffix,
+ * name, size, age, magic number matching, and logical combinations (AND, OR, NOT).
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see Smb1FileFilter
+ */
 public class Smb1FileFilters {
 
     /**

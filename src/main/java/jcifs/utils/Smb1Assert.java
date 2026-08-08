@@ -11,9 +11,18 @@ import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import jcifs.smb1.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFile;
 
 
+/**
+ * Assertion utility for SMB1 file operations. Validates file existence, permissions,
+ * sizes, and transfer states before performing SMB1 operations.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see Assert
+ * @see Smb2Assert
+ */
 public class Smb1Assert {
 
 	protected static Logger LOG = LoggerFactory.getLogger(Smb1Assert.class);

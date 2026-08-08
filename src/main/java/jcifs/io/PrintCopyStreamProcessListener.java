@@ -6,11 +6,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 文件上传下载进度打印
+ * A concrete implementation of {@link CopyStreamProcessListener} that logs file upload/download
+ * progress information using SLF4J, including bytes transferred and percentage completion.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see CopyStreamProcessListener
  */
 public class PrintCopyStreamProcessListener extends CopyStreamProcessListener {
-	
+
 	protected static Logger LOG = LoggerFactory.getLogger(PrintCopyStreamProcessListener.class);
 	protected BigDecimal hundred  = new BigDecimal(100);
 	
