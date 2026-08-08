@@ -2,10 +2,20 @@ package jcifs.smb.pool;
 
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 /**
  * 基于apache-pool2的对象池初始化对象
+ */
+/**
+ * Configuration for the SMB file connection pool, extending Apache Commons Pool2's
+ * {@link GenericObjectPoolConfig}. Use this to tune pool parameters such as
+ * max total connections, max idle, min idle, and eviction settings.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see SmbFilePool
+ * @see SmbFilePooledFactory
  */
 public class SmbFilePoolConfig extends GenericObjectPoolConfig<SmbFile> {
 	

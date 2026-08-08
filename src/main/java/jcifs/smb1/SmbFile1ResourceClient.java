@@ -15,12 +15,22 @@ import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.ByteArrayOutputStream;
 
 import jcifs.smb1.filter.Smb1FileFilter;
-import jcifs.smb1.smb1.SmbFile;
+import org.codelibs.jcifs.smb1.SmbFile;
 import jcifs.utils.SMBClientUtils;
  
 /**
  * 基于ThreadLocal多线程对象复用的SMBClient共享文件资源服务客户端实现
  * @author [@Loong Wan](https://github.com/loong10k)
+ */
+/**
+ * SMB1 resource client implementation using {@link ThreadLocal} for thread-safe
+ * client instance reuse. Provides the full SMB1 file operation API including
+ * upload, download, delete, rename, and directory operations.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see ISMBClient
+ * @see SmbFile1PooledResourceClient
  */
 public class SmbFile1ResourceClient implements ISMBClient{
 	

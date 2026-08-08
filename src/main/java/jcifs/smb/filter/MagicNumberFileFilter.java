@@ -31,10 +31,20 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.SystemUtils;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbException;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 @SuppressWarnings("serial")
+/**
+ * A file filter that accepts files based on their magic number (a specific byte sequence)
+ * at a given offset within the file. Useful for identifying file types by their content
+ * rather than their extension.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AbstractFileFilter
+ * @see Smb2FileFilters#magicNumberFileFilter(String)
+ */
 public class MagicNumberFileFilter extends AbstractFileFilter  implements Serializable {
 	
 	/**

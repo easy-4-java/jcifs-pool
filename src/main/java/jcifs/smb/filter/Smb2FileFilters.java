@@ -27,9 +27,20 @@ import java.util.Set;
 import org.apache.commons.io.IOCase;
 import org.apache.commons.io.filefilter.DirectoryFileFilter;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbException;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
+/**
+ * Factory and utility methods for creating and combining {@link Smb2FileFilter} instances.
+ * Provides static factory methods for common filter patterns such as prefix, suffix,
+ * name, size, age, magic number matching, and logical combinations (AND, OR, NOT).
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see Smb2FileFilter
+ * @see AndFileFilter
+ * @see OrFileFilter
+ */
 public class Smb2FileFilters {
 
     /**

@@ -8,9 +8,10 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.lang3.reflect.ConstructorUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.codelibs.jcifs.smb1.NtlmPasswordAuthentication;
+import org.codelibs.jcifs.smb1.UniAddress;
 
 import jcifs.io.CopyStreamProcessListener;
-import jcifs.smb1.smb1.NtlmPasswordAuthentication;
 import jcifs.utils.SMBPathUtils;
 
 /**

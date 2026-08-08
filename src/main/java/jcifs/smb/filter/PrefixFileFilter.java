@@ -20,10 +20,19 @@ import java.util.List;
 
 import org.apache.commons.io.IOCase;
 
-import jcifs.smb.SmbException;
-import jcifs.smb.SmbFile;
+import org.codelibs.jcifs.smb.impl.SmbException;
+import org.codelibs.jcifs.smb.impl.SmbFile;
 
 @SuppressWarnings("serial")
+/**
+ * A file filter that accepts files whose names start with one of the specified prefixes.
+ * Supports case-sensitive and case-insensitive matching via {@link IOCase}.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AbstractFileFilter
+ * @see Smb2FileFilters#prefixFileFilter(String)
+ */
 public class PrefixFileFilter extends AbstractFileFilter implements Serializable {
 
 	/** The filename prefixes to search for */
