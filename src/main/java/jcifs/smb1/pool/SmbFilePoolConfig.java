@@ -4,8 +4,13 @@ import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 import jcifs.smb1.SmbFile1;
 /**
- * 基于apache-pool2的对象池初始化对象
+ * Configuration for the SMB1 file connection pool, extending Apache Commons Pool2's
+ * {@link GenericObjectPoolConfig}. Includes an additional flag to enable or disable the pool.
+ *
  * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see SmbFilePool
+ * @see SmbFilePooledFactory
  */
 public class SmbFilePoolConfig extends GenericObjectPoolConfig<SmbFile1> {
 	

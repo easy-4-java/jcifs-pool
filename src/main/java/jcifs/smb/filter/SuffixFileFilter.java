@@ -24,6 +24,15 @@ import org.codelibs.jcifs.smb.impl.SmbException;
 import org.codelibs.jcifs.smb.impl.SmbFile;
 
 @SuppressWarnings("serial")
+/**
+ * A file filter that accepts files whose names end with one of the specified suffixes.
+ * Supports case-sensitive and case-insensitive matching via {@link IOCase}.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AbstractFileFilter
+ * @see Smb2FileFilters#suffixFileFilter(String)
+ */
 public class SuffixFileFilter extends AbstractFileFilter implements Serializable {
 	
 	/** The filename suffixes to search for */

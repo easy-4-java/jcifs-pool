@@ -30,6 +30,16 @@ import jcifs.smb.filter.Smb2FileFilters;
 import jcifs.smb.filter.SuffixFileFilter;
 import jcifs.smb.filter.TrueFileFilter;
 
+/**
+ * Utility class for listing and filtering SMB2 files in shared directories.
+ * Supports recursive directory traversal, extension-based filtering, and
+ * custom {@link Smb2FileFilter} application.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see Smb1FileUtils
+ * @see Smb2FileUtils
+ */
 public class SmbFileUtils {
 
 	//-----------------------------------------------------------------------

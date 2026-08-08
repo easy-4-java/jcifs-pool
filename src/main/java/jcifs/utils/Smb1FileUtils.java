@@ -33,6 +33,16 @@ import org.codelibs.jcifs.smb1.SmbException;
 import org.codelibs.jcifs.smb1.SmbFile;
 import org.codelibs.jcifs.smb1.SmbFileFilter;
 
+/**
+ * Utility class for listing and filtering SMB1 files in shared directories.
+ * Supports recursive directory traversal, extension-based filtering, and
+ * custom {@link Smb1FileFilter} application.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see SmbFileUtils
+ * @see Smb2FileUtils
+ */
 public class Smb1FileUtils {
 
 	protected static Logger LOG = LoggerFactory.getLogger(Smb1FileUtils.class);

@@ -20,6 +20,17 @@ import org.slf4j.LoggerFactory;
 
 import jcifs.io.CopyStreamProcessListener;
 
+/**
+ * Extended SMB2 file wrapper that adds buffering, progress monitoring, and
+ * configuration capabilities on top of the base jcifs {@link SmbFile}.
+ * Supports auto-flush, configurable buffer sizes, and copy stream progress listening.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see SmbFile2Builder
+ * @see SmbFile2Config
+ * @see CopyStreamProcessListener
+ */
 public class SmbFile2 extends SmbFile {
 	
 	/** 默认缓存大小： 8M */

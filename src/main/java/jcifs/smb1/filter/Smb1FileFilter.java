@@ -18,6 +18,15 @@ package jcifs.smb1.filter;
 import org.codelibs.jcifs.smb1.SmbFileFilter;
 import org.codelibs.jcifs.smb1.SmbFilenameFilter;
 
+/**
+ * Unified file filter interface for SMB1 protocol that combines both {@link SmbFileFilter}
+ * and {@link SmbFilenameFilter} capabilities.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AbstractFileFilter
+ * @see Smb1FileFilters
+ */
 public interface Smb1FileFilter extends SmbFileFilter, SmbFilenameFilter {
 
 }

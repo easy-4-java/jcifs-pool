@@ -24,6 +24,15 @@ import org.codelibs.jcifs.smb.impl.SmbException;
 import org.codelibs.jcifs.smb.impl.SmbFile;
 
 @SuppressWarnings("serial")
+/**
+ * A file filter that accepts files whose names match one of the specified names.
+ * Supports case-sensitive and case-insensitive matching via {@link IOCase}.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AbstractFileFilter
+ * @see Smb2FileFilters#nameFileFilter(String)
+ */
 public class NameFileFilter  extends AbstractFileFilter implements Serializable{
 	
 	/** The filenames to search for */

@@ -22,6 +22,12 @@ import org.codelibs.jcifs.smb1.SmbFile;
 
 
 @SuppressWarnings("serial")
+/**
+ * A file filter that always returns {@code false} for SMB1 shares.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class FalseFileFilter implements Smb1FileFilter , Serializable {
    
 	public static final Smb1FileFilter FALSE = new FalseFileFilter();

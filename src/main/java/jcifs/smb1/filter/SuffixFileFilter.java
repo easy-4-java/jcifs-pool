@@ -24,6 +24,12 @@ import org.codelibs.jcifs.smb1.SmbException;
 import org.codelibs.jcifs.smb1.SmbFile;
 
 @SuppressWarnings("serial")
+/**
+ * A file filter that accepts files whose names end with one of the specified suffixes for SMB1 shares.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class SuffixFileFilter extends AbstractFileFilter implements Serializable {
 	
 	/** The filename suffixes to search for */

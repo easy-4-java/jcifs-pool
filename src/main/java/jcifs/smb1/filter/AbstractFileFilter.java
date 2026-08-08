@@ -18,6 +18,14 @@ package jcifs.smb1.filter;
 import org.codelibs.jcifs.smb1.SmbException;
 import org.codelibs.jcifs.smb1.SmbFile;
 
+/**
+ * Abstract base implementation of {@link Smb1FileFilter} that provides default implementations
+ * for the two-argument accept method by delegating to the single-argument version.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see Smb1FileFilter
+ */
 public abstract class AbstractFileFilter implements Smb1FileFilter {
 
     /**

@@ -21,6 +21,14 @@ import org.codelibs.jcifs.smb.impl.SmbException;
 import org.codelibs.jcifs.smb.impl.SmbFile;
 
 @SuppressWarnings("serial")
+/**
+ * A file filter that always returns {@code true}, accepting all files.
+ * This is a singleton filter accessible via {@link #TRUE} or {@link #INSTANCE}.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see FalseFileFilter
+ */
 public class TrueFileFilter implements Smb2FileFilter, Serializable {
 	
     public static final Smb2FileFilter TRUE = new TrueFileFilter();

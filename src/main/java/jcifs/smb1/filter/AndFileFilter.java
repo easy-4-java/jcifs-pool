@@ -25,6 +25,13 @@ import org.codelibs.jcifs.smb1.SmbFile;
 
 
 @SuppressWarnings("serial")
+/**
+ * A composite file filter that combines multiple filters using AND logic for SMB1 shares.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see OrFileFilter
+ */
 public class AndFileFilter extends AbstractFileFilter implements ConditionalFileFilter, Serializable {
 	
 	

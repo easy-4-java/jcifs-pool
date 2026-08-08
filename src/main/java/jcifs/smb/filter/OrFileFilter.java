@@ -25,6 +25,15 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
 
 
 @SuppressWarnings("serial")
+/**
+ * A composite file filter that combines multiple {@link Smb2FileFilter} instances using
+ * logical OR logic. A file is accepted if any one of the contained filters accepts it.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ * @see AndFileFilter
+ * @see ConditionalFileFilter
+ */
 public class OrFileFilter extends AbstractFileFilter implements ConditionalFileFilter, Serializable {
 	
 	/** The list of file filters. */

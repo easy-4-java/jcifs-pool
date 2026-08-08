@@ -23,6 +23,12 @@ import org.codelibs.jcifs.smb1.SmbFileFilter;
 
 
 @SuppressWarnings("serial")
+/**
+ * An adapter that wraps an SMB1 {@link SmbFileFilter} for use with the {@link Smb1FileFilter} interface.
+ *
+ * @author [@Loong Wan](https://github.com/loong10k)
+ * @since 3.0.0
+ */
 public class DelegateFileFilter  extends AbstractFileFilter implements Serializable {
 
     /** The File filter */
