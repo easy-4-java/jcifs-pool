@@ -6,15 +6,6 @@ import jcifs.smb.pool.SmbFilePool;
  * 基于 Apache Pool2的SMBClient共享文件资源服务客户端实现
  * @author [@Loong Wan](https://github.com/loong10k)
  */
-/**
- * SMB2 resource client implementation backed by an Apache Commons Pool2 connection pool.
- * Manages SMB2 client lifecycle by borrowing from and returning to the pool.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see SmbFile2ResourceClient
- * @see jcifs.smb.pool.SmbFilePool
- */
 public class SmbFile2PooledResourceClient extends SmbFile2ResourceClient{
 	
 	private SmbFilePool clientPool = null;

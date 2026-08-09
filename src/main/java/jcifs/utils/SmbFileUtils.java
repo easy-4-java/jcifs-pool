@@ -20,9 +20,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Collection;
 
-import org.codelibs.jcifs.smb.impl.SmbException;
-import org.codelibs.jcifs.smb.impl.SmbFile;
-import org.codelibs.jcifs.smb.impl.SmbFileFilter;
+import jcifs.smb.SmbException;
+import jcifs.smb.SmbFile;
+import jcifs.smb.SmbFileFilter;
 import jcifs.smb.filter.FalseFileFilter;
 import jcifs.smb.filter.FileFileFilter;
 import jcifs.smb.filter.Smb2FileFilter;
@@ -30,16 +30,6 @@ import jcifs.smb.filter.Smb2FileFilters;
 import jcifs.smb.filter.SuffixFileFilter;
 import jcifs.smb.filter.TrueFileFilter;
 
-/**
- * Utility class for listing and filtering SMB2 files in shared directories.
- * Supports recursive directory traversal, extension-based filtering, and
- * custom {@link Smb2FileFilter} application.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see Smb1FileUtils
- * @see Smb2FileUtils
- */
 public class SmbFileUtils {
 
 	//-----------------------------------------------------------------------

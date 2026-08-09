@@ -6,8 +6,6 @@ import java.io.OutputStream;
 
 import javax.servlet.ServletResponse;
 
-import org.codelibs.jcifs.smb.impl.SmbFile;
-
 import jcifs.smb1.SmbFile1;
 import jcifs.smb.filter.Smb2FileFilter;
 

@@ -20,17 +20,8 @@ import org.slf4j.LoggerFactory;
 
 import jcifs.smb1.SmbFile1;
 import jcifs.smb1.filter.Smb1FileFilter;
-import org.codelibs.jcifs.smb1.SmbFile;
+import jcifs.smb1.smb1.SmbFile;
 
-/**
- * Comprehensive utility class for SMB1 file operations including upload, download,
- * directory management, file listing, and NIO channel-based transfers.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see SmbFile1ResourceClient
- * @see SMBChannelUtils
- */
 public class SMBClientUtils {
 
 protected static Logger LOG = LoggerFactory.getLogger(SMBClientUtils.class);

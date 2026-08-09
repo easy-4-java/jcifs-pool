@@ -17,16 +17,10 @@ package jcifs.smb1.filter;
 
 import java.io.Serializable;
 
-import org.codelibs.jcifs.smb1.SmbException;
-import org.codelibs.jcifs.smb1.SmbFile;
+import jcifs.smb1.smb1.SmbException;
+import jcifs.smb1.smb1.SmbFile;
 
 @SuppressWarnings("serial")
-/**
- * A file filter that accepts only regular files for SMB1 shares.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- */
 public class FileFileFilter extends AbstractFileFilter implements Serializable {
 
     /** Singleton instance of file filter */

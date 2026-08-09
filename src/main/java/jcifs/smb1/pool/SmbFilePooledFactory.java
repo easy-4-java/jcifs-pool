@@ -12,14 +12,7 @@ import jcifs.smb1.SmbFile1;
 import jcifs.smb1.SmbFile1Builder;
 
 /**
- * Factory for creating and managing pooled SMB1 file instances. Extends Apache Commons Pool2's
- * {@link BasePooledObjectFactory} to provide lifecycle management including creation,
- * activation, passivation, validation, and destruction of SMB1 connections.
- *
  * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see SmbFilePool
- * @see SmbFilePoolConfig
  */
 public class SmbFilePooledFactory extends BasePooledObjectFactory<SmbFile1> {
 

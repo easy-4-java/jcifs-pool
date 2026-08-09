@@ -19,20 +19,11 @@ import java.io.File;
 import java.io.Serializable;
 import java.util.Date;
 
-import org.codelibs.jcifs.smb.impl.SmbFile;
+import jcifs.smb.SmbFile;
 import jcifs.utils.SmbFileUtils;
 
 
 @SuppressWarnings("serial")
-/**
- * A file filter that accepts files based on their last modification time.
- * Can filter for files older or newer than a specified cutoff time.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see AbstractFileFilter
- * @see Smb2FileFilters#ageFileFilter(long)
- */
 public class AgeFileFilter extends AbstractFileFilter implements Serializable {
 
     /** The cutoff time threshold. */

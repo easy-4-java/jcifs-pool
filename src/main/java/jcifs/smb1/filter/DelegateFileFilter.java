@@ -17,18 +17,12 @@ package jcifs.smb1.filter;
 
 import java.io.Serializable;
 
-import org.codelibs.jcifs.smb1.SmbException;
-import org.codelibs.jcifs.smb1.SmbFile;
-import org.codelibs.jcifs.smb1.SmbFileFilter;
+import jcifs.smb1.smb1.SmbException;
+import jcifs.smb1.smb1.SmbFile;
+import jcifs.smb1.smb1.SmbFileFilter;
 
 
 @SuppressWarnings("serial")
-/**
- * An adapter that wraps an SMB1 {@link SmbFileFilter} for use with the {@link Smb1FileFilter} interface.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- */
 public class DelegateFileFilter  extends AbstractFileFilter implements Serializable {
 
     /** The File filter */

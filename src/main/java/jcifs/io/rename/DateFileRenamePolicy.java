@@ -10,16 +10,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 
-/**
- * A {@link FileRenamePolicy} that renames files using a date-based pattern
- * (yyyyMMddHHmmssS format). Optionally supports local backup by copying
- * the renamed file to a specified backup directory.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see FileRenamePolicy
- * @see UUIDFileRenamePolicy
- */
 public class DateFileRenamePolicy implements FileRenamePolicy {
 
 	protected SimpleDateFormat ftm = new SimpleDateFormat("yyyyMMddHHmmssS");

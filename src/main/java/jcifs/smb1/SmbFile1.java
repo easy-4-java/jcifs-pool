@@ -16,21 +16,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import jcifs.io.CopyStreamProcessListener;
-import org.codelibs.jcifs.smb1.NtlmPasswordAuthentication;
-import org.codelibs.jcifs.smb1.SmbFile;
-import org.codelibs.jcifs.smb1.SmbFileInputStream;
+import jcifs.smb1.smb1.NtlmPasswordAuthentication;
+import jcifs.smb1.smb1.SmbFile;
+import jcifs.smb1.smb1.SmbFileInputStream;
 
-/**
- * Extended SMB1 file wrapper that adds buffering, progress monitoring, and
- * configuration capabilities on top of the base jcifs SMB1 {@link SmbFile}.
- * Supports auto-flush, configurable buffer sizes, and copy stream progress listening.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see SmbFile1Builder
- * @see SmbFile1Config
- * @see CopyStreamProcessListener
- */
 public class SmbFile1 extends SmbFile {
 	
 	/** 默认缓存大小： 8M */

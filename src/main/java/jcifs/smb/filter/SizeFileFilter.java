@@ -17,19 +17,10 @@ package jcifs.smb.filter;
 
 import java.io.Serializable;
 
-import org.codelibs.jcifs.smb.impl.SmbException;
-import org.codelibs.jcifs.smb.impl.SmbFile;
+import jcifs.smb.SmbException;
+import jcifs.smb.SmbFile;
 
 @SuppressWarnings("serial")
-/**
- * A file filter that accepts files based on their size. Can filter for files
- * larger than or smaller than a specified threshold.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see AbstractFileFilter
- * @see Smb2FileFilters#sizeFileFilter(long)
- */
 public class SizeFileFilter extends AbstractFileFilter implements Serializable {
 	
 	 /** The size threshold. */

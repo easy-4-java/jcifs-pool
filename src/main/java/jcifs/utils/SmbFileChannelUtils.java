@@ -11,16 +11,6 @@ import org.apache.commons.io.IOUtils;
 import jcifs.io.CopyStreamProcessListener;
 import jcifs.smb1.SmbFile1;
 
-/**
- * Utility class for NIO channel-based file transfers with SMB1 shares.
- * Provides methods for copying data between {@link FileChannel} and {@link OutputStream}
- * with support for progress monitoring and auto-flush.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see SmbFile1StreamUtils
- * @see Smb2ChannelUtils
- */
 public class SmbFileChannelUtils extends SmbFile1StreamUtils {
     
 	public static boolean copyLarge(FileChannel inChannel,OutputStream output, SmbFile1 sharedFile) throws IOException{

@@ -20,16 +20,10 @@ import java.util.List;
 
 import org.apache.commons.io.IOCase;
 
-import org.codelibs.jcifs.smb1.SmbException;
-import org.codelibs.jcifs.smb1.SmbFile;
+import jcifs.smb1.smb1.SmbException;
+import jcifs.smb1.smb1.SmbFile;
 
 @SuppressWarnings("serial")
-/**
- * A file filter that accepts files whose names start with one of the specified prefixes for SMB1 shares.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- */
 public class PrefixFileFilter extends AbstractFileFilter implements Serializable {
 
 	/** The filename prefixes to search for */

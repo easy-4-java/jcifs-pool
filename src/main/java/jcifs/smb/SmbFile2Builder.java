@@ -9,7 +9,7 @@ import org.apache.commons.lang3.reflect.ConstructorUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import org.codelibs.jcifs.smb.context.BaseContext;
+import jcifs.context.BaseContext;
 import jcifs.io.CopyStreamProcessListener;
 import jcifs.utils.SMBPathUtils;
 

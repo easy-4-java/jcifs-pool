@@ -17,19 +17,10 @@ package jcifs.smb.filter;
 
 import java.io.Serializable;
 
-import org.codelibs.jcifs.smb.impl.SmbException;
-import org.codelibs.jcifs.smb.impl.SmbFile;
+import jcifs.smb.SmbException;
+import jcifs.smb.SmbFile;
 
 @SuppressWarnings("serial")
-/**
- * A file filter that negates the result of another {@link Smb2FileFilter}.
- * Accepts files that the wrapped filter rejects, and vice versa.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see AbstractFileFilter
- * @see Smb2FileFilters#notFileFilter(Smb2FileFilter)
- */
 public class NotFileFilter extends AbstractFileFilter implements Serializable {
 
     /** The filter */

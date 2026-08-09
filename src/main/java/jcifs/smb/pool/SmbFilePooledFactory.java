@@ -7,8 +7,8 @@ import org.apache.commons.pool2.BasePooledObjectFactory;
 import org.apache.commons.pool2.PooledObject;
 import org.apache.commons.pool2.impl.DefaultPooledObject;
 
-import org.codelibs.jcifs.smb.context.BaseContext;
-import org.codelibs.jcifs.smb.impl.SmbFile;
+import jcifs.context.BaseContext;
+import jcifs.smb.SmbFile;
 import lombok.extern.slf4j.Slf4j;
 
 /**

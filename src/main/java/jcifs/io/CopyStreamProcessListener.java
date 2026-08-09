@@ -1,30 +1,18 @@
 package jcifs.io;
 
 /**
- * Abstract listener for monitoring data transfer progress during stream copy operations.
- * Extend this class to implement custom progress tracking for file uploads and downloads.
- *
+ * 数据处理进度监听抽象实现，可继承该对象进行进度检测
  * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see PrintCopyStreamProcessListener
  */
 public abstract class CopyStreamProcessListener {
-
-	/** The name of the file being transferred. */
+	
+	// 文件名称
 	protected String fileName;
-
-	/**
-	 * Constructs a new CopyStreamProcessListener with default settings.
-	 */
+	
 	public CopyStreamProcessListener(){
-
+		
 	}
-
-	/**
-	 * Sets the name of the file currently being transferred.
-	 *
-	 * @param fileName the name of the file being transferred
-	 */
+	
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
 	}

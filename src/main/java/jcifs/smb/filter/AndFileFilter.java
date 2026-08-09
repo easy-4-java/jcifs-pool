@@ -20,19 +20,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.codelibs.jcifs.smb.impl.SmbException;
-import org.codelibs.jcifs.smb.impl.SmbFile;
+import jcifs.smb.SmbException;
+import jcifs.smb.SmbFile;
 
 @SuppressWarnings("serial")
-/**
- * A composite file filter that combines multiple {@link Smb2FileFilter} instances using
- * logical AND logic. A file is accepted only if all contained filters accept it.
- *
- * @author [@Loong Wan](https://github.com/loong10k)
- * @since 3.0.0
- * @see OrFileFilter
- * @see ConditionalFileFilter
- */
 public class AndFileFilter extends AbstractFileFilter implements ConditionalFileFilter, Serializable {
 	
 	
