@@ -19,10 +19,6 @@ import org.codelibs.jcifs.smb1.SmbFile;
 import jcifs.utils.SMBClientUtils;
  
 /**
- * 基于ThreadLocal多线程对象复用的SMBClient共享文件资源服务客户端实现
- * @author [@Loong Wan](https://github.com/loong10k)
- */
-/**
  * SMB1 resource client implementation using {@link ThreadLocal} for thread-safe
  * client instance reuse. Provides the full SMB1 file operation API including
  * upload, download, delete, rename, and directory operations.

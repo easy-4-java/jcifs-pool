@@ -18,9 +18,6 @@ package jcifs.smb.filter;
 import java.util.List;
 
 /**
- * Defines operations for conditional file filters.
- */
-/**
  * Interface for file filters that support composition of multiple child filters.
  * Implementations allow adding, removing, and managing a list of {@link Smb2FileFilter} instances.
  *

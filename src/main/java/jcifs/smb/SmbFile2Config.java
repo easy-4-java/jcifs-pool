@@ -9,10 +9,6 @@ import org.apache.commons.lang3.SystemUtils;
 import jcifs.io.CopyStreamProcessListener;
 
 /**
- * Samba客户端的配置
- * @author [@Loong Wan](https://github.com/loong10k)
- */
-/**
  * Configuration holder for SMB2 client connections. Contains all settings needed
  * to establish and manage SMB2 file sharing sessions including host, credentials,
  * timeouts, buffer sizes, and progress monitoring configuration.

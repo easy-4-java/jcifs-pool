@@ -4,10 +4,6 @@ package jcifs.smb1;
 import jcifs.smb1.pool.SmbFilePool;
  
 /**
- * 基于 Apache Pool2的SMBClient共享文件资源服务客户端实现
- * @author [@Loong Wan](https://github.com/loong10k)
- */
-/**
  * SMB1 resource client implementation backed by an Apache Commons Pool2 connection pool.
  * Manages SMB1 client lifecycle by borrowing from and returning to the pool.
  *
