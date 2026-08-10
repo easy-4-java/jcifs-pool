@@ -4,7 +4,7 @@ package jcifs.io;
  * Abstract listener for monitoring data transfer progress during stream copy operations.
  * Extend this class to implement custom progress tracking for file uploads and downloads.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see PrintCopyStreamProcessListener
  */

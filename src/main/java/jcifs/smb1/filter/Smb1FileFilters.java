@@ -37,7 +37,7 @@ import org.codelibs.jcifs.smb1.SmbFileFilter;
  * Provides static factory methods for common filter patterns such as prefix, suffix,
  * name, size, age, magic number matching, and logical combinations (AND, OR, NOT).
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see Smb1FileFilter
  */

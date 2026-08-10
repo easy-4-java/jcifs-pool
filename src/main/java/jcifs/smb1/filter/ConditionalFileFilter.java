@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * Interface for SMB1 file filters that support composition of multiple child filters.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public interface ConditionalFileFilter {

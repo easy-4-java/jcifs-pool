@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
  * A concrete implementation of {@link CopyStreamProcessListener} that logs file upload/download
  * progress information using SLF4J, including bytes transferred and percentage completion.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see CopyStreamProcessListener
  */

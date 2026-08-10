@@ -23,7 +23,7 @@ import jcifs.utils.SMBClientUtils;
  * client instance reuse. Provides the full SMB1 file operation API including
  * upload, download, delete, rename, and directory operations.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see ISMBClient
  * @see SmbFile1PooledResourceClient

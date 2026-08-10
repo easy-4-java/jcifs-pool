@@ -13,7 +13,7 @@ import jcifs.io.CopyStreamProcessListener;
  * to establish and manage SMB2 file sharing sessions including host, credentials,
  * timeouts, buffer sizes, and progress monitoring configuration.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFile2Builder
  * @see SmbFile2

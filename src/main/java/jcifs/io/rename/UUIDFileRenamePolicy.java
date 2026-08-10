@@ -14,7 +14,7 @@ import org.apache.commons.lang3.StringUtils;
  * preserving the original file extension. Optionally supports local backup
  * by copying the renamed file to a specified backup directory.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see FileRenamePolicy
  * @see DateFileRenamePolicy

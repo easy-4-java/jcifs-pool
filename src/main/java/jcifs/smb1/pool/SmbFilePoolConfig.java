@@ -7,7 +7,7 @@ import jcifs.smb1.SmbFile1;
  * Configuration for the SMB1 file connection pool, extending Apache Commons Pool2's
  * {@link GenericObjectPoolConfig}. Includes an additional flag to enable or disable the pool.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFilePool
  * @see SmbFilePooledFactory

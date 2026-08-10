@@ -24,7 +24,7 @@ import org.codelibs.jcifs.smb1.SmbFile;
 /**
  * A file filter that negates the result of another filter for SMB1 shares.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class NotFileFilter extends AbstractFileFilter implements Serializable {

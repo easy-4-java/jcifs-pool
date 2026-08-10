@@ -17,7 +17,7 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
  * Assertion utility for SMB2 file operations. Validates file existence, permissions,
  * sizes, and transfer states before performing SMB2 operations.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see Assert
  * @see Smb1Assert

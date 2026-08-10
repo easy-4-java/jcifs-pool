@@ -27,7 +27,7 @@ import org.codelibs.jcifs.smb1.SmbFile;
 /**
  * A file filter that accepts files whose names match one of the specified names for SMB1 shares.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  */
 public class NameFileFilter  extends AbstractFileFilter implements Serializable{

@@ -12,7 +12,7 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Slf4j
 public class SmbFilePooledFactory extends BasePooledObjectFactory<SmbFile> {

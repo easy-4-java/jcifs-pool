@@ -23,7 +23,7 @@ import jcifs.utils.Smb2FileUtils;
  * client instance reuse. Provides the full SMB2 file operation API including
  * upload, download, delete, rename, and directory operations.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see ISMBClient
  * @see SmbFile2PooledResourceClient
