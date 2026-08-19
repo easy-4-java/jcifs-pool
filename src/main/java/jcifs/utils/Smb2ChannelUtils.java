@@ -16,7 +16,7 @@ import jcifs.smb.SmbFile2;
  * Provides methods for copying data between {@link FileChannel} and {@link OutputStream}
  * with support for progress monitoring and auto-flush.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFile2StreamUtils
  * @see SMBChannelUtils

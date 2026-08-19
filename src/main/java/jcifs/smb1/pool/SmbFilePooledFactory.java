@@ -16,7 +16,7 @@ import jcifs.smb1.SmbFile1Builder;
  * {@link BasePooledObjectFactory} to provide lifecycle management including creation,
  * activation, passivation, validation, and destruction of SMB1 connections.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFilePool
  * @see SmbFilePoolConfig

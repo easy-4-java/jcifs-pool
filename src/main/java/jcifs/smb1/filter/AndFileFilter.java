@@ -28,7 +28,7 @@ import org.codelibs.jcifs.smb1.SmbFile;
 /**
  * A composite file filter that combines multiple filters using AND logic for SMB1 shares.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see OrFileFilter
  */

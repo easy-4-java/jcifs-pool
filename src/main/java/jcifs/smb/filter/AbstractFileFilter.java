@@ -23,7 +23,7 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
  * for the two-argument {@code accept} method by delegating to the single-argument version.
  * Subclasses should override {@link #accept(SmbFile)} to implement their filtering logic.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see Smb2FileFilter
  * @see Smb2FileFilters

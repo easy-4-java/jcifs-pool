@@ -22,7 +22,7 @@ import org.codelibs.jcifs.smb1.SmbFile;
  * Abstract base implementation of {@link Smb1FileFilter} that provides default implementations
  * for the two-argument accept method by delegating to the single-argument version.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see Smb1FileFilter
  */

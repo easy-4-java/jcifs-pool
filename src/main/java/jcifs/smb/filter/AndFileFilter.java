@@ -28,7 +28,7 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
  * A composite file filter that combines multiple {@link Smb2FileFilter} instances using
  * logical AND logic. A file is accepted only if all contained filters accept it.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see OrFileFilter
  * @see ConditionalFileFilter

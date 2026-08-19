@@ -26,7 +26,7 @@ import jcifs.smb.SmbFile2;
  * wrapping, large file copy operations with progress monitoring, and skip/resume
  * support for interrupted transfers.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFile1StreamUtils
  * @see SmbFile2ResourceClient

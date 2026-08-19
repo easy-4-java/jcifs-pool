@@ -35,7 +35,7 @@ import jcifs.smb.filter.TrueFileFilter;
  * Supports recursive directory traversal, extension-based filtering, and
  * custom {@link Smb2FileFilter} application.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see Smb1FileUtils
  * @see Smb2FileUtils

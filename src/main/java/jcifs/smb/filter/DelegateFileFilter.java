@@ -26,7 +26,7 @@ import org.codelibs.jcifs.smb.impl.SmbFileFilter;
  * An adapter that wraps a {@link SmbFileFilter} (single-argument accept) and makes it
  * compatible with the {@link Smb2FileFilter} interface.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AbstractFileFilter
  */

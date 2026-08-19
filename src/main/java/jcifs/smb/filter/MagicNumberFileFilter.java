@@ -40,7 +40,7 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
  * at a given offset within the file. Useful for identifying file types by their content
  * rather than their extension.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AbstractFileFilter
  * @see Smb2FileFilters#magicNumberFileFilter(String)

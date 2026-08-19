@@ -28,7 +28,7 @@ import jcifs.utils.SmbFileUtils;
  * A file filter that accepts files based on their last modification time.
  * Can filter for files older or newer than a specified cutoff time.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AbstractFileFilter
  * @see Smb2FileFilters#ageFileFilter(long)

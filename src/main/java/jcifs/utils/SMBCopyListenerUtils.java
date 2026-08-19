@@ -8,7 +8,7 @@ import jcifs.smb1.SmbFile1;
  * Utility class for initializing copy stream progress listeners on SMB file objects.
  * Sets the filename on the listener before transfer operations begin.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see CopyStreamProcessListener
  */

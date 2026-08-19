@@ -28,7 +28,7 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
  * A file filter that accepts files whose names start with one of the specified prefixes.
  * Supports case-sensitive and case-insensitive matching via {@link IOCase}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AbstractFileFilter
  * @see Smb2FileFilters#prefixFileFilter(String)

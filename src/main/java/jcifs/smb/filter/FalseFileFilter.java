@@ -26,7 +26,7 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
  * A file filter that always returns {@code false}, rejecting all files.
  * This is a singleton filter accessible via {@link #FALSE} or {@link #INSTANCE}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see TrueFileFilter
  */
