@@ -12,7 +12,7 @@ import jcifs.smb1.SmbFile1;
 import jcifs.smb1.SmbFile1Builder;
 
 /**
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class SmbFilePooledFactory extends BasePooledObjectFactory<SmbFile1> {
 

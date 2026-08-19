@@ -2,7 +2,7 @@ package jcifs.io;
 
 /**
  * 数据处理进度监听抽象实现，可继承该对象进行进度检测
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public abstract class CopyStreamProcessListener {
 	

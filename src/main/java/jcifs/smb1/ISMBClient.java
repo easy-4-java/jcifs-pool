@@ -11,7 +11,7 @@ import jcifs.smb1.smb1.SmbFile;
 
 /**
  * SMBClient 客户端接口
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public interface ISMBClient {
 	

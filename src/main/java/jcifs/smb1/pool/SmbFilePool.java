@@ -7,7 +7,7 @@ import jcifs.smb1.SmbFile1;
 
 /**
  * SMBClient连接池
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class SmbFilePool extends GenericObjectPool<SmbFile1> {
 

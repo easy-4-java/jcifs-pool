@@ -20,7 +20,7 @@ import jcifs.utils.SMBClientUtils;
  
 /**
  * 基于ThreadLocal多线程对象复用的SMBClient共享文件资源服务客户端实现
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class SmbFile1ResourceClient implements ISMBClient{
 	

@@ -10,7 +10,7 @@ import jcifs.io.CopyStreamProcessListener;
 
 /**
  * Samba客户端的配置
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class SmbFile1Config {
 

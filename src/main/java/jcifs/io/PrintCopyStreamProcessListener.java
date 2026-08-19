@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 文件上传下载进度打印
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class PrintCopyStreamProcessListener extends CopyStreamProcessListener {
 	
