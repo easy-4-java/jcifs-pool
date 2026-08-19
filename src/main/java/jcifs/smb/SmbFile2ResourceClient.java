@@ -20,14 +20,14 @@ import jcifs.utils.Smb2FileUtils;
  
 /**
  * 基于ThreadLocal多线程对象复用的SMBClient共享文件资源服务客户端实现
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 /**
  * SMB2 resource client implementation using {@link ThreadLocal} for thread-safe
  * client instance reuse. Provides the full SMB2 file operation API including
  * upload, download, delete, rename, and directory operations.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see ISMBClient
  * @see SmbFile2PooledResourceClient

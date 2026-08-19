@@ -24,7 +24,7 @@ import java.util.List;
  * Interface for file filters that support composition of multiple child filters.
  * Implementations allow adding, removing, and managing a list of {@link Smb2FileFilter} instances.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AndFileFilter
  * @see OrFileFilter

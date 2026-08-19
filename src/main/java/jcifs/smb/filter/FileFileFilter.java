@@ -25,7 +25,7 @@ import org.codelibs.jcifs.smb.impl.SmbFile;
  * A file filter that accepts only regular files (not directories).
  * This is a singleton filter accessible via {@link #FILE}.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AbstractFileFilter
  */

@@ -25,7 +25,7 @@ import jcifs.io.CopyStreamProcessListener;
  * configuration capabilities on top of the base jcifs {@link SmbFile}.
  * Supports auto-flush, configurable buffer sizes, and copy stream progress listening.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFile2Builder
  * @see SmbFile2Config

@@ -18,7 +18,7 @@ import org.codelibs.jcifs.smb1.SmbFile;
  * Assertion utility for SMB1 file operations. Validates file existence, permissions,
  * sizes, and transfer states before performing SMB1 operations.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see Assert
  * @see Smb2Assert

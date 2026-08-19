@@ -6,7 +6,7 @@ import java.io.File;
  * Strategy interface for renaming files. Implementations provide different
  * naming conventions for resolving file name conflicts during file operations.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see DateFileRenamePolicy
  * @see UUIDFileRenamePolicy

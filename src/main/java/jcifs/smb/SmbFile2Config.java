@@ -10,14 +10,14 @@ import jcifs.io.CopyStreamProcessListener;
 
 /**
  * Samba客户端的配置
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 /**
  * Configuration holder for SMB2 client connections. Contains all settings needed
  * to establish and manage SMB2 file sharing sessions including host, credentials,
  * timeouts, buffer sizes, and progress monitoring configuration.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFile2Builder
  * @see SmbFile2

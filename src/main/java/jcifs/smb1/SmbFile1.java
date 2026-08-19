@@ -25,7 +25,7 @@ import org.codelibs.jcifs.smb1.SmbFileInputStream;
  * configuration capabilities on top of the base jcifs SMB1 {@link SmbFile}.
  * Supports auto-flush, configurable buffer sizes, and copy stream progress listening.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFile1Builder
  * @see SmbFile1Config

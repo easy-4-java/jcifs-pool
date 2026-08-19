@@ -26,7 +26,7 @@ import jcifs.utils.Smb1FileUtils;
 /**
  * A file filter that accepts files based on their last modification time for SMB1 shares.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AbstractFileFilter
  */

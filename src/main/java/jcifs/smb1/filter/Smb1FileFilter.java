@@ -22,7 +22,7 @@ import org.codelibs.jcifs.smb1.SmbFilenameFilter;
  * Unified file filter interface for SMB1 protocol that combines both {@link SmbFileFilter}
  * and {@link SmbFilenameFilter} capabilities.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see AbstractFileFilter
  * @see Smb1FileFilters

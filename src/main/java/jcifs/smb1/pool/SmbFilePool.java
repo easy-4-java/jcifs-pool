@@ -9,7 +9,7 @@ import jcifs.smb1.SmbFile1;
  * SMB1 client connection pool backed by Apache Commons Pool2. Manages a pool of
  * reusable SMB1 file connections to improve performance and resource utilization.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFilePooledFactory
  * @see SmbFilePoolConfig

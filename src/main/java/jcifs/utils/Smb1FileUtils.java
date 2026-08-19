@@ -38,7 +38,7 @@ import org.codelibs.jcifs.smb1.SmbFileFilter;
  * Supports recursive directory traversal, extension-based filtering, and
  * custom {@link Smb1FileFilter} application.
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SmbFileUtils
  * @see Smb2FileUtils
