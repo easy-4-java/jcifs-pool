@@ -336,7 +336,6 @@
             </activation>
     <properties>
         <!-- Dependency versions -->
-        <additionalparam>-Xdoclint:none</additionalparam>
         <!-- Maven Plugin versions -->
         <maven-central-publishing-plugin.version>0.11.0</maven-central-publishing-plugin.version>
         <maven-jacoco-plugin.version>0.8.15</maven-jacoco-plugin.version>
